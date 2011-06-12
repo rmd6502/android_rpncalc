@@ -1,5 +1,5 @@
 package com.calculatorguy.rpncalc.statemachine;
 
 public interface State {
-	public State handleEvent(Object c);
+	public <T> State handleEvent(CalcEvent<T> c);
 }
